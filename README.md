@@ -89,11 +89,13 @@ This repository contains the scripts or commands used to complete the following 
 
 -   **Objective**: Remove the empty directory `empty_directory` from `/root`.
 -   **Implementation**:
+
     ```bash
     cd /root
     rmdir empty_directory
     ls -d empty_directory 2>/dev/null; echo $?
     ```
+
 -   **Verification**: The exit code of the `ls -d empty_directory` command being non-zero confirms the directories deletion.
 
 ## Usage
@@ -110,4 +112,3 @@ These tasks are designed to be executed within a Linux shell environment. Access
 ## Author
 
 Merlyn Zawadi
-```
